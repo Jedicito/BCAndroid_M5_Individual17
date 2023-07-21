@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">M5_Individual17</string>
+    <string name="editTextNumber1">Ingrese monto</string>
+    <string name="txvResultado">Convertido en: </string>
+    <string name="txvTitulo">Conversor de Unidades</string>
+    <string name="btnConvertir">Convertir</string>
+    <string name="btnLimpiar">Limpiar valores</string>
+</resources>
