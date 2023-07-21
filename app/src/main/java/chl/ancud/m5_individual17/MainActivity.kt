@@ -48,17 +48,21 @@ class MainActivity : AppCompatActivity() {
                         "USD" -> factorCambio = 1.0
                         "CLP" -> factorCambio = 817.0
                         "EUR" -> factorCambio = 0.89
+                        else  -> factorCambio = 0.0
             }
             "CLP" -> when (divisaCambio) {
                         "USD" -> factorCambio = 0.001
                         "CLP" -> factorCambio = 1.0
                         "EUR" -> factorCambio = 0.001
+                        else  -> factorCambio = 0.0
             }
             "EUR" -> when (divisaCambio) {
                         "USD" -> factorCambio = 1.11
                         "CLP" -> factorCambio = 910.0
                         "EUR" -> factorCambio = 1.0
+                        else  -> factorCambio = 0.0
             }
+            else -> factorCambio = 0.0
         }
 
         return monto * factorCambio
